@@ -1,0 +1,101 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: Greet and ask about ISRO
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_isro
+  - action: utter_about_isro
+
+- story: Express gratitude and inquire about ISRO missions
+  steps:
+  # - intent: thanks
+  # - action: utter_you_are_welcome
+  - intent: missions
+  - action: utter_missions
+
+- story: Ask about ISRO's Mars mission
+  steps:
+  - intent: mars_mission
+  - action: utter_mars_mission
+
+- story: Inquire about ISRO's achievements
+  steps:
+  - intent: achievements
+  - action: utter_achievements
+
+- story: Request information on ISRO's launch vehicles
+  steps:
+  - intent: launch_vehicles
+  - action: utter_launch_vehicles
+
+- story: Express confusion and fallback
+  steps:
+  - intent: confused
+  - action: utter_confusion
+  - action: utter_default
+
+
+
+- story: Ask about ISRO's satellites
+  steps:
+  - intent: satellites
+  - action: utter_satellites
+
+- story: Ask for information about ISRO's space technology
+  steps:
+  - intent: space_technology
+  - action: utter_space_technology
+
+- story: Ask about ISRO's recent missions
+  steps:
+  - intent: missions
+  - action: utter_missions
+
+- story: Ask about ISRO's achievements after expressing gratitude
+  steps:
+  - intent: achievements
+  - action: utter_achievements
+
+- story: Ask about ISRO's Mars mission after expressing gratitude
+  steps:
+  - intent: mars_mission
+  - action: utter_mars_mission
+
+- story: Ask about ISRO's satellites after expressing gratitude
+  steps:
+  
+  - intent: satellites
+  - action: utter_satellites
+
+

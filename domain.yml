@@ -1,0 +1,80 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+  - about_isro
+  - missions
+  - launch_vehicles
+  - satellites
+  - space_technology
+  - achievements
+  - mars_mission
+  - help
+  - unrecognised_intent
+  - confused
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  
+
+  utter_about_isro:
+    - text: "ISRO, the Indian Space Research Organisation, is the space agency of the Government of India, headquartered in Bengaluru. ISRO, founded in 1969, aims to harness space technology for national development while pursuing space science research & planetary exploration."
+
+  utter_missions:
+    - text: "ISRO has undertaken numerous space missions, including satellite launches, planetary explorations, and interplanetary missions."
+
+  utter_launch_vehicles:
+    - text: "ISRO has developed several launch vehicles such as PSLV, GSLV, and GSLV Mk III, which are used for launching satellites into space."
+
+  utter_satellites:
+    - text: "ISRO has launched a variety of satellites for communication, navigation, earth observation, and scientific research purposes."
+
+  utter_space_technology:
+    - text: "ISRO is known for its advancements in space technology, including satellite technology, remote sensing, and space exploration."
+
+  utter_achievements:
+    - text: "ISRO has achieved numerous milestones, including successful satellite launches, interplanetary missions, and space technology innovations."
+
+  utter_mars_mission:
+    - text: "ISRO's Mars Orbiter Mission, also known as Mangalyaan, was launched in 2013 and made India the first Asian nation to reach Mars orbit."
+
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Can you please rephrase or ask something else?"
+    - text: "I'm not sure I follow. Could you please provide more information or ask a different question?"
+
+  utter_help:
+    - text: "Sure, I'm here to help! What do you need assistance with?"
+    - text: "How can I assist you? Feel free to ask any questions you have."
+
+  utter_confusion:
+    - text: "It seems there's some confusion. Let me know if there's anything specific you'd like to ask."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

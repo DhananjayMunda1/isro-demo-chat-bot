@@ -1,0 +1,163 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: about_isro
+  examples: |
+    - What is ISRO?
+    - Can you tell me about ISRO?
+    - What does ISRO stand for?
+    - Explain ISRO to me
+    - Tell me about the Indian Space Research Organisation
+    - What's the role of ISRO?
+    - Describe ISRO
+
+- intent: missions
+  examples: |
+    - What are some recent ISRO missions?
+    - Tell me about ISRO's missions
+    - Can you list some ISRO space missions?
+    - What is the latest mission by ISRO?
+    - Describe a few of ISRO's recent projects
+    - What are the upcoming missions of ISRO?
+    - Provide details about ISRO's space exploration missions
+
+- intent: launch_vehicles
+  examples: |
+    - What are the launch vehicles used by ISRO?
+    - Tell me about ISRO's launch vehicles
+    - Which rockets does ISRO use?
+    - Explain ISRO's rocket fleet
+    - List some of the launch vehicles developed by ISRO
+    - Describe the different types of rockets used by ISRO
+    - What are the names of ISRO's satellite launchers?
+
+- intent: satellites
+  examples: |
+    - How many satellites has ISRO launched?
+    - Tell me about ISRO's satellites
+    - What types of satellites does ISRO build?
+    - Explain ISRO's satellite program
+    - List some of the satellites launched by ISRO
+    - What are the functions of ISRO's satellites?
+    - Provide details about ISRO's satellite constellation
+
+- intent: space_technology
+  examples: |
+    - What space technologies does ISRO develop?
+    - Tell me about ISRO's technological advancements
+    - How is ISRO contributing to space technology?
+    - Explain ISRO's role in advancing space science
+    - List some of the innovations by ISRO
+    - What are the latest developments in ISRO's space technology?
+    - Describe ISRO's contributions to space exploration
+
+- intent: achievements
+  examples: |
+    - What are some notable achievements of ISRO?
+    - Tell me about ISRO's accomplishments
+    - Can you list some milestones achieved by ISRO?
+    - Explain the successes of ISRO
+    - Provide details about ISRO's significant achievements
+    - What records has ISRO broken?
+    - Describe some key achievements in ISRO's history
+
+- intent: mars_mission
+  examples: |
+    - Tell me about ISRO's Mars mission
+    - What was the name of ISRO's Mars mission?
+    - Explain the Mars Orbiter Mission by ISRO
+    - Can you provide details about Mangalyaan?
+    - Describe India's mission to Mars
+    - What were the objectives of ISRO's Mars mission?
+    - Provide information about ISRO's journey to Mars
+
